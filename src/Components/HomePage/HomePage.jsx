@@ -1,14 +1,33 @@
+/* eslint-disable react/prop-types */
 import './HomePage.css'
 import DNA from './DNA/DNA'
+import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 function HomePage() {
-  return (
+  function Div({ children }) {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    return (
+      <div ref={ref} >
+        <h1 className='header_text'
+          style={{
+            transform: isInView ? 'none' : 'translateX(-200px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+          }}
+        >
+          {children}
+        </h1>
+      </div>
+    )
+  }
+  return (  
     <div className='section'>
       <div className='dnh'>
-      <div className='header_text'>
-        <h1>
-        Welcome to Trust Pharma LTD
-          </h1>
-      </div>
+      <Div>
+      Welcome to Trust Pharma LTD
+      </Div>
       <div className='dna'>
       <DNA/>
       </div>
