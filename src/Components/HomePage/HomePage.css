@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 
 html {
   background: #000;
@@ -14,45 +14,51 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo logo logo"
-      "dnh dnh dnh"
-      ". . .";
-  }
-  
-  .logo { grid-area: logo; }
-  
-  .dnh { grid-area: dnh; }
-  
-  .navButton { grid-area: navButton; }
-  
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo logo logo"
+    "dnh dnh dnh"
+    ". . .";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.dnh {
+  grid-area: dnh;
+}
+
+.navButton {
+  grid-area: navButton;
+}
+
 .dna {
   font-size: 10px;
   width: 15%;
   margin: auto;
 }
 
-
-.header_text{
+.header_text {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Playfair Display', serif;
-  background: rgba( 65, 76, 149, 0.35 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 14.5px );
--webkit-backdrop-filter: blur( 14.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 20px 20px;
-margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
+  background: rgba(65, 76, 149, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px 20px;
+  margin-bottom: 50px;
 }
 .dnh {
   display: flex;
@@ -62,13 +68,9 @@ margin-bottom: 50px;
   align-items: center;
   margin: auto;
   grid-area: dnh;
-
 }
-.logo{
-width: 434.4px;
-height: 217px;
-grid-area: logo;
-
-
-
+.logo {
+  width: 434.4px;
+  height: 217px;
+  grid-area: logo;
 }
