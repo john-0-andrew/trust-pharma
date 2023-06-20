@@ -4,6 +4,8 @@ import DNA from './DNA/DNA'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 import logo from '../../assets/LOGO.png'
+import NavButton from '../NavButton/NavButton'
+
 function Logo({ children }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -22,6 +24,7 @@ function Logo({ children }) {
     </div>
   )
 }
+
 function HomePage() {
   function Div({ children }) {
     const ref = useRef(null)
@@ -62,10 +65,10 @@ function HomePage() {
 
 
   return (  
+
     <div className='section'>
       <Logo> <img className='logo' src={logo} alt="" />
       </Logo>
-   
       <div className='dnh'>
       <Div>
       Welcome to Trust Pharma LTD
@@ -74,7 +77,7 @@ function HomePage() {
       <DNA/>
       </Section>
       </div>
-      
+      <NavButton  />
     </div>
   )
 }
