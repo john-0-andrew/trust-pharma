@@ -18,17 +18,8 @@ body {
   font-size: 10px;
   width: 15%;
   margin: auto;
-  animation: rotateAnimation 10s infinite linear;
 }
 
-@keyframes rotateAnimation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .header_text{
   color: white;
