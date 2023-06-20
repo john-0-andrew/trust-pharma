@@ -3,7 +3,7 @@ import './HomePage.css'
 import DNA from './DNA/DNA'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
-import logoPNG from '../../assets/LOGO.png'
+import logoPNG from '../../../src/assets/trust-logo.png'
 import NavButton from '../NavButton/NavButton'
 
 function Logo({ children }) {
