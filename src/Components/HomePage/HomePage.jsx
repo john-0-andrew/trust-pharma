@@ -4,6 +4,24 @@ import DNA from './DNA/DNA'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 import logo from '../../assets/LOGO.png'
+function Logo({ children }) {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  return (
+    <div ref={ref} className='logo' >
+      <div 
+        style={{
+          transform: isInView ? 'none' : 'translateY(500px)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+        }}
+        >
+        {children}
+      </div>
+    </div>
+  )
+}
 function HomePage() {
   function Div({ children }) {
     const ref = useRef(null)
@@ -15,7 +33,7 @@ function HomePage() {
           style={{
             transform: isInView ? 'none' : 'translateY(500px)',
             opacity: isInView ? 1 : 0,
-            transition: 'all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+            transition: 'all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
           }}
         >
           {children}
@@ -33,7 +51,7 @@ function HomePage() {
           style={{
             transform: isInView ? 'none' : 'translateY(500px)',
             opacity: isInView ? 1 : 0,
-            transition: 'all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s',
+            transition: 'all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s',
           }}
           >
           {children}
@@ -41,9 +59,13 @@ function HomePage() {
       </div>
     )
   }
+
+
   return (  
     <div className='section'>
-      <div className='border'> <img src={logo} alt="" /></div>
+      <Logo> <img className='logo' src={logo} alt="" />
+      </Logo>
+   
       <div className='dnh'>
       <Div>
       Welcome to Trust Pharma LTD
