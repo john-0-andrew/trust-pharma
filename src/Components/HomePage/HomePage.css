@@ -11,11 +11,6 @@ body {
   scroll-snap-align: start;
   height: 100vh;
   width: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -24,10 +19,16 @@ body {
   grid-template-areas:
     "logo logo logo"
     "dnh dnh dnh"
-    ". . .";
+    ". . nav-btn";
 }
 
 .logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 421.02px;
+  height: 297.72px;
   grid-area: logo;
 }
 
@@ -35,14 +36,21 @@ body {
   grid-area: dnh;
 }
 
-.navButton {
-  grid-area: navButton;
+.nav-btn {
+  grid-area: nav-btn;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
 }
 
 .dna {
-  font-size: 10px;
-  width: 15%;
+  font-size: 15px;
+  width: 30%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_text {
@@ -51,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Playfair Display", serif;
-  background: rgba(65, 76, 149, 0.35);
+  background: #3f59a684;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);
@@ -59,18 +67,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 20px 20px;
   margin-bottom: 50px;
+  font-size: 30px;
+  width: 70%;
+  text-align: center;
 }
 .dnh {
+  width: 100%;
   display: flex;
-  width: 75%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
   grid-area: dnh;
-}
-.logo {
-  width: 434.4px;
-  height: 217px;
-  grid-area: logo;
 }

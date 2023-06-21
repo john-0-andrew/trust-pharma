@@ -1,0 +1,9 @@
+    body {
+      background-image: url('./assets/image.jpg');
+      background-color: rgb(0, 0, 0);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+    }
