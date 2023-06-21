@@ -2,7 +2,8 @@
 
 html {
   background: #000;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 body {
   min-height: 100%;
@@ -11,7 +12,10 @@ body {
   scroll-snap-align: start;
   height: 100vh;
   width: 100%;
-  display: grid;
+
+}
+#home {
+    display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -24,9 +28,6 @@ body {
 
 .logo {
   grid-area: logo;
-  display: flex;
-  align-items: center;
-  justify-content: start;
   width: 421.02px;
   height: 297.72px;
   grid-area: logo;
@@ -34,6 +35,12 @@ body {
 
 .dnh {
   grid-area: dnh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .nav-btn {
@@ -42,6 +49,10 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding-right: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
 }
 
 .dna {
@@ -70,13 +81,4 @@ body {
   font-size: 30px;
   width: 70%;
   text-align: center;
-}
-.dnh {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  grid-area: dnh;
 }

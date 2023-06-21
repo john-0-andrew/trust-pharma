@@ -8,7 +8,7 @@ import ButtonMenu from "../BtnMenu/BtnMenu";
 
 function Logo({ children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
 
   return (
     <div ref={ref} className="logo">
@@ -24,65 +24,68 @@ function Logo({ children }) {
     </div>
   );
 }
-  function Div({ children }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
 
-    return (
+function Div({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  return (
+    <div
+      ref={ref}
+      className="header_text"
+      style={{
+        transform: isInView ? "none" : "translateY(500px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref); // Removed { once: true }
+
+  return (
+    <div ref={ref} className="dna">
       <div
-        ref={ref}
-        className="header_text"
         style={{
-          transform: isInView ? "none" : "translateY(500px)",
+          transform: isInView ? "none" : "translateX(500px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s",
         }}
       >
         {children}
       </div>
-    );
-  }
-  function Section({ children }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    </div>
+  );
+}
 
-    return (
-      <div ref={ref} className="dna">
-        <div
-          style={{
-            transform: isInView ? "none" : "translateY(500px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s",
-          }}
-        >
-          {children}
-        </div>
+function NavAnimated({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  return (
+    <div ref={ref} className="nav-btn">
+      <div
+        style={{
+          transform: isInView ? "none" : "translateY(500px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s",
+        }}
+      >
+        {children}
       </div>
-    );
-  }
-    function NavAnimated({ children }) {
-      const ref = useRef(null);
-      const isInView = useInView(ref, { once: true });
+    </div>
+  );
+}
 
-      return (
-        <div ref={ref} className="nav-btn">
-          <div
-            style={{
-              transform: isInView ? "none" : "translateY(500px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s",
-            }}
-          >
-            {children}
-          </div>
-        </div>
-      );
-    }
 function HomePage() {
   return (
     <div className="section" id="home">
       <Logo>
-        {" "}
         <img className="logo" src={logoPNG} alt="" />
       </Logo>
       <div className="dnh">
@@ -91,8 +94,8 @@ function HomePage() {
           <DNA />
         </Section>
       </div>
-      <NavAnimated >
-        <ButtonMenu/>
+      <NavAnimated>
+        <ButtonMenu />
       </NavAnimated>
     </div>
   );
