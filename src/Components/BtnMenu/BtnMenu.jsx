@@ -11,7 +11,7 @@ const BtnMenu = () => {
     color: "white",
     backgroundColor: "#F79517",
     borderRadius: "50%",
-    fontSize: "100px",
+    fontSize: "50px",
     padding: "8px",
     transition: "transform 0.3s ease",
   }));
