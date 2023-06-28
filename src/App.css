@@ -1,5 +1,7 @@
-.container {
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    overflow-y: scroll;
+.site {
+    scroll-behavior: smooth;
+    background: #25408F;
+}
+body,html,* {
+    scroll-behavior: smooth;
 }

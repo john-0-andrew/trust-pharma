@@ -1,84 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
-
-html {
-  background: #000;
-  overflow-y: hidden;
-  overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
-body {
-  min-height: 100%;
-}
-.section {
-  scroll-snap-align: start;
+.container1 {
+  width: 100%;
   height: 100vh;
-  width: 100%;
-
-}
-#home {
-    display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "logo logo logo"
-    "dnh dnh dnh"
-    ". . nav-btn";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("../../assets//BackGround3.jpg");
+  background-size: cover;
+  background-position: 100%;
+  /* padding: 0 8%; */
+  position: relative;
 }
 
-.logo {
-  grid-area: logo;
-  width: 421.02px;
-  height: 297.72px;
-  grid-area: logo;
+.text-box {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 5%;
 }
-
-.dnh {
-  grid-area: dnh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.nav-btn {
-  grid-area: nav-btn;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 100px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 9999;
-}
-
-.dna {
-  font-size: 15px;
-  width: 30%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header_text {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Playfair Display", serif;
-  background: #3f59a684;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(14.5px);
-  -webkit-backdrop-filter: blur(14.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 20px 20px;
-  margin-bottom: 50px;
+.text-box p {
   font-size: 30px;
-  width: 70%;
-  text-align: center;
+  font-weight: 600;
+}
+.text-box h1 {
+  font-size: 100px;
+  line-height: 120px;
+  margin-bottom: 20px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(../../assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+.text-box h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+@media screen and (max-width: 955px) {
+  .container1 {
+  background-position: 80%;
+}
+}
+@media screen and (max-width: 666px) {
+  .text-box p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.text-box h1 {
+  font-size: 70px;
+  line-height: 120px;
+  margin-bottom: 20px;
+}
+.text-box h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+}
+@media screen and (max-width: 434px) {
+    .container1 {
+  background-position: 78%;
+}
+  .text-box p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.text-box h1 {
+  font-size: 60px;
+  line-height: 120px;
+  margin-bottom: 20px;
+}
+.text-box h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
 }
