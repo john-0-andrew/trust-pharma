@@ -1,3 +1,6 @@
+.team-bg {
+  background: #25408F;
+}
 .section2{
     margin: 0;
     padding: 0;
@@ -12,7 +15,6 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background: #25408F;
     margin: 0 auto;
     /* bazawed ay haga 3ashan a3mel push */
     overflow-y: hidden;

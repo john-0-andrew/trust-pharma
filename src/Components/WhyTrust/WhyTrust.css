@@ -1,73 +1,108 @@
+.w-trust {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("../../assets/chemicals.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  background: rgba(30, 40, 172,1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.boxes h1 {
+  color: #ffffff;
+}
+@media screen and (max-width:415px) {
+    .boxes h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:306px) {
+    .boxes h1 {
+        font-size: 15px;
+    }
+    .boxes p {
+        font-size: 10px;
+    }
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  display: block;
+}
+.section3 {
+  margin: 0;
+  color: #fff;
+  font-family: Calibri, sans-serif;
+}
 
-*{
-    box-sizing: border-box;
-}
-section{
-display: block;
-}
-.section3{
-    margin: 0;
-    background-color: #ffffff;
-    color: #fff;
-    font-family: Calibri, sans-serif;
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.center{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.boxes p {
+  width: 80%;
+  padding: 10px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
 }
-
-.center p{
-    width: 70%;
-    font-size: 30px;
-    display: block;
-    color: #25408F ;
-    white-space: pre-line;
-    text-align: center;
-}
-
-.char{
-    font-size: 40px;
-    height: 40px;
-    animation: an 1s ease-out 1 both;
+.char {
     display: inline-block;
+  animation: an 1s ease-out 1 both;
 }
 
-@keyframes an{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-40px, -45px, -155px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
+@keyframes an {
+  from {
+    opacity: 0;
+    transform: perspective(500px) translate3d(-40px, -45px, -155px)
+      rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(500px) translate3d(0, 0, 0);
+  }
 }
 .section {
-    padding: 80px 0 65px;
-    margin-bottom: 30px;
+  padding: 80px 0 65px;
+  margin-bottom: 30px;
 }
 .section-header {
-    color: #fff;
-    margin-bottom: 50px;
-    text-align: center;
-    position: relative;
+  color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
 }
 
 .section-header .section-title {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-color: #f99d1c;
-    background-image: -webkit-linear-gradient(bottom right, #f99d1c, #f99d1c);
-    background-image: -o-linear-gradient(bottom right, #f99d1c, #f99d1c);
-    background-image: linear-gradient(to top left, #f99d1c, #f99d1c);
-    position: relative;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-color: #f99d1c;
+  background-image: -webkit-linear-gradient(bottom right, #f99d1c, #f99d1c);
+  background-image: -o-linear-gradient(bottom right, #f99d1c, #f99d1c);
+  background-image: linear-gradient(to top left, #f99d1c, #f99d1c);
+  position: relative;
 }

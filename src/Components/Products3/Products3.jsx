@@ -71,7 +71,7 @@ function Products3() {
   ];
   return (
     <div className="products-page" id="products">
-      <div className="p-title" id="products">
+      <div className="title" id="products">
         <h1>Products</h1>
       </div>
       <div className="cards">
