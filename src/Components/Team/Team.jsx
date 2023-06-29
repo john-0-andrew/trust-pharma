@@ -1,8 +1,8 @@
 import "./Team.css";
 function Team(){
     return (
-        <div>
-    <div className="t-title" id="team">
+        <div className="team-bg">
+    <div className="title" id="team">
         <h1>Our Team</h1>
         </div>
     <div className="box">
