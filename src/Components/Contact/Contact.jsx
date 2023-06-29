@@ -1,4 +1,7 @@
 import "./Contact.css";
+import fblogo from "../../assets/fb.png";
+import linkedinlogo from "../../assets/linkedin.png";
+import emaillogo from "../../assets/e-mail.png";
 
 function Contact() {
   return (
@@ -57,9 +60,9 @@ function Contact() {
         <div className="col social">
           <h1 >Social</h1>
           <ul>
-            <li><img src="https://svgshare.com/i/5fq.svg" width={32} style={{width: '32px'}} /></li>
-            <li><img src="https://svgshare.com/i/5eA.svg" width={32} style={{width: '32px'}} /></li>
-            <li><img src="https://svgshare.com/i/5f_.svg" width={32} style={{width: '32px'}} /></li>
+            <li><img src={fblogo} width={32} style={{width: '32px'}} /></li>
+            <li><img src={linkedinlogo} width={32} style={{width: '32px'}} /></li>
+            <li><img src={emaillogo} width={32} style={{width: '32px'}} /></li>
           </ul>
         </div>
         <div className="clearfix" />

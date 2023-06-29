@@ -6,7 +6,7 @@ function HomePage() {
     <div className=" container1" id="home">
         <NavBar/>
       <div className="text-box">
-        <p>slogan</p>
+        <p>Trust Pharma LTD</p>
         <h1>Slogan</h1>
         <h3>SLOGAN SLOGAN SLOGAN</h3>
       </div>
