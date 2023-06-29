@@ -12,6 +12,7 @@
 }
 a {
   text-decoration: none;
+  font-size: 18px;
 }
 .products-page {
   background: linear-gradient(45deg, #25408f, #000000);
@@ -26,6 +27,7 @@ a {
 }
 .product-card {
   width: 380px;
+  height: 550px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: auto;
@@ -35,9 +37,11 @@ a {
   transition: 0.3s;
 }
 .product-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.13);
 }
-
+.product-card p{
+font-size: 12px;
+}
 .badge {
   position: absolute;
   left: 0;
@@ -71,10 +75,9 @@ a {
 
 .product-catagory {
   display: block;
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #ccc;
+  color: #000000;
   margin-bottom: 18px;
 }
 
@@ -94,10 +97,11 @@ a {
 }
 
 .product-details p {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 200;
   line-height: 22px;
   margin-bottom: 18px;
-  color: #999;
+  color: #25408f
 }
 
 .product-bottom-details {
