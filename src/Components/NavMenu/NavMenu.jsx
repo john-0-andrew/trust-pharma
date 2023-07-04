@@ -1,8 +1,10 @@
-import "./NavBar.css";
+/* eslint-disable no-unused-vars */
+import './NavMenu.css'
 import logo from "../../assets/logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useEffect, useState } from "react";
-function NavBar() {
+
+function NavMenu() {
   const [navOpen, setNavOpen] = useState(false);
 
   const closeNav = () => {
@@ -30,20 +32,19 @@ function NavBar() {
         src={logo}
         alt=""
       />
-      <div>
-        <input
-          className="menu-icon"
-          type="checkbox"
-          id="menu-icon"
-          name="menu-icon"
-          checked={navOpen}
-          onChange={() => setNavOpen(!navOpen)}
-        />
-        <label htmlFor="menu-icon"></label>
-        <nav className="nav">
-          <ul className="pt-5">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input
+            type="checkbox"
+            checked={navOpen}
+            onChange={() => setNavOpen(!navOpen)}
+          />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
             <li>
-              <Link to="home" smooth={true} duration={500} onClick={closeNav}>
+              <Link to="home" smooth={true} duration={800} onClick={closeNav}>
                 Home
               </Link>
             </li>
@@ -51,7 +52,7 @@ function NavBar() {
               <Link
                 to="about-us"
                 smooth={true}
-                duration={300}
+                duration={800}
                 onClick={closeNav}
               >
                 About Us
@@ -61,14 +62,14 @@ function NavBar() {
               <Link
                 to="products"
                 smooth={true}
-                duration={300}
+                duration={800}
                 onClick={closeNav}
               >
                 Products
               </Link>
             </li>
             <li>
-              <Link to="team" smooth={true} duration={300} onClick={closeNav}>
+              <Link to="team" smooth={true} duration={800} onClick={closeNav}>
                 Team
               </Link>
             </li>
@@ -76,7 +77,7 @@ function NavBar() {
               <Link
                 to="WhyTrust"
                 smooth={true}
-                duration={300}
+                duration={800}
                 onClick={closeNav}
               >
                 Why Trust Pharma ?
@@ -86,17 +87,17 @@ function NavBar() {
               <Link
                 to="contact"
                 smooth={true}
-                duration={300}
+                duration={800}
                 onClick={closeNav}
               >
                 Contact Us
               </Link>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   );
 }
 
-export default NavBar;
+export default NavMenu

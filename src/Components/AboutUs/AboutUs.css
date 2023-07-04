@@ -23,7 +23,6 @@ body {
     align-items: center;
     background-color: #F99B1C;
     color: white;
-    border-bottom-left-radius: 50px;
 }
 @media screen and (max-width:415px) {
   .title h1 {

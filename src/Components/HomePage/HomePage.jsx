@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import './HomePage.css'
-import NavBar from '../NavBar/NavBar';
+// import NavBar from '../NavBar/NavBar';
+import NavMenu from '../NavMenu/NavMenu';
 function HomePage() {
   return (
     <div className=" container1" id="home">
-        <NavBar/>
+        {/* <NavBar/> */}
+        <NavMenu/>
       <div className="text-box">
         <p>Trust Pharma LTD</p>
         <h1>Slogan</h1>
