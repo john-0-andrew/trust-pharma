@@ -44,7 +44,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 20px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -159,6 +159,12 @@ li a {
   }
   .header {
     height: 100px;
+  }
+  #menu {
+    width: 300px;
+    padding: 30px;
+    padding-top: 125px;
+    right: -100px;
   }
 }
 @media screen and (max-width: 280px) {

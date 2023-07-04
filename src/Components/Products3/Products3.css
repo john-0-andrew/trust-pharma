@@ -39,8 +39,8 @@ a {
 .product-card:hover {
   transform: scale(1.05);
 }
-.product-card p{
-font-size: 12px;
+.product-card p {
+  font-size: 12px;
 }
 .badge {
   position: absolute;
@@ -101,7 +101,7 @@ font-size: 12px;
   font-weight: 200;
   line-height: 22px;
   margin-bottom: 18px;
-  color: #25408f
+  color: #25408f;
 }
 
 .product-bottom-details {
@@ -143,4 +143,14 @@ font-size: 12px;
 
 .product-links a:hover {
   color: #fbb72c;
+}
+@media screen and (max-width: 780px) {
+  .product-card {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 434px) {
+  .product-card {
+    width: 310px;
+  }
 }
