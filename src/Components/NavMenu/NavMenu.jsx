@@ -44,7 +44,7 @@ function NavMenu() {
           <span></span>
           <ul id="menu">
             <li>
-              <Link to="home" smooth={true} duration={800} onClick={closeNav}>
+              <Link to="home" smooth={true} duration={400} onClick={closeNav}>
                 Home
               </Link>
             </li>
@@ -52,7 +52,7 @@ function NavMenu() {
               <Link
                 to="about-us"
                 smooth={true}
-                duration={800}
+                duration={400}
                 onClick={closeNav}
               >
                 About Us
@@ -62,14 +62,14 @@ function NavMenu() {
               <Link
                 to="products"
                 smooth={true}
-                duration={800}
+                duration={400}
                 onClick={closeNav}
               >
                 Products
               </Link>
             </li>
             <li>
-              <Link to="team" smooth={true} duration={800} onClick={closeNav}>
+              <Link to="team" smooth={true} duration={400} onClick={closeNav}>
                 Team
               </Link>
             </li>
@@ -77,7 +77,7 @@ function NavMenu() {
               <Link
                 to="WhyTrust"
                 smooth={true}
-                duration={800}
+                duration={400}
                 onClick={closeNav}
               >
                 Why Trust Pharma ?
@@ -87,7 +87,7 @@ function NavMenu() {
               <Link
                 to="contact"
                 smooth={true}
-                duration={800}
+                duration={400}
                 onClick={closeNav}
               >
                 Contact Us
