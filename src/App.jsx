@@ -12,7 +12,6 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setIsLoading(false);
       setTimeout(() => {
         setIsLoading(false);
       }, 4000);
