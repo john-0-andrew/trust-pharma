@@ -10,14 +10,20 @@ import Loading from "./Components/Loading/Loading";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
+    const handleLoad = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 5000);
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
-
 
   return (
     <div>

@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.6",
+    "framer-motion": "^10.12.18",
     "gsap": "^3.12.1",
     "jquery": "npm:jQuery@^1.7.4",
     "jQuery": "^1.7.4",

@@ -18,6 +18,7 @@
     margin: 0 auto;
     /* bazawed ay haga 3ashan a3mel push */
     overflow-y: hidden;
+    overflow-x: hidden;
   }
   .card{
     position: relative;

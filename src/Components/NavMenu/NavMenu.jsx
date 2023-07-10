@@ -27,11 +27,13 @@ function NavMenu() {
   }, []);
   return (
     <div className={`header ${scrolled ? "scrolled" : ""}`}>
-      <img
-        className={`logo ${scrolled ? "scrolled" : ""} `}
-        src={logo}
-        alt=""
-      />
+      <Link to="home" smooth={true} duration={400}>
+        <img
+          className={`logo ${scrolled ? "scrolled" : ""} `}
+          src={logo}
+          alt=""
+        />
+      </Link>
       <nav role="navigation">
         <div id="menuToggle">
           <input
