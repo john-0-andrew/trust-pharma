@@ -5,8 +5,9 @@ import HomePage from "./Components/HomePage/HomePage";
 import Products3 from "./Components/Products3/Products3";
 import Team from "./Components/Team/Team";
 import WhyTrust from "./Components/WhyTrust/WhyTrust";
-import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import Loading from "./Components/Loading/Loading";
+import ContactUs from "./Components/ContactUs/ContactUs";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -30,7 +31,8 @@ function App() {
           <Products3 />
           <Team />
           <WhyTrust />
-          <Contact />
+          <ContactUs/>
+          <Footer />
         </div>
       )}
     </div>
