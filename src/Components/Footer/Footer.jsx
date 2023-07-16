@@ -1,11 +1,11 @@
-import "./Contact.css";
+import "./Footer.css";
 import fblogo from "../../assets/fb.png";
 import linkedinlogo from "../../assets/linkedin.png";
 import emaillogo from "../../assets/e-mail.png";
 
-function Contact() {
+function Footer() {
   return (
-    <div className="center" id="contact">
+    <div className="center">
     <div className="footer">
       <div className="contain">
         <div className="col">
@@ -73,4 +73,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Footer
