@@ -1,70 +1,64 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import "./ContactUs.css";
-import { useEffect } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { styled } from "@mui/system";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Arrow = styled(ArrowForwardIcon)(({ theme }) => ({
-    fontSize: "40px",
+    fontSize: "35px",
     color: "#25408f",
+    marginTop: '-5px'
   }));
     const DURATION = 1500; // ms
 const ContactUs = () => {
-  useEffect(() => {
-    let text = 'Contact Us';
-    let HTMLtext = '';
+    function ContactCard({ children }) {
+      const ref = useRef(null);
+      const isInView = useInView(ref, { once: true });
 
-    for (let i = 0; i < text.length; i++) {
-      if (text.charAt(i) !== ' ') {
-        HTMLtext += `<div class="inscription">${text.charAt(i)}</div>`;
-      } else {
-        HTMLtext += '<div class="inscription">&nbsp</div>';
-      }
-    }
-
-    const container = document.querySelector(".inscription-container");
-    container.innerHTML = HTMLtext;
-
-    const inscription = document.querySelectorAll(".inscription");
-    inscription.forEach(letter => {
-      letter.addEventListener("mouseover", function () {
-        letter.classList.add("animation");
-        setTimeout(function () {
-          letter.classList.remove("animation");
-        }, DURATION);
-      });
-    });
-
-    // Clean up event listeners
-    return () => {
-      inscription.forEach(letter => {
-        letter.removeEventListener("mouseover", function () {
-          letter.classList.add("animation");
-          setTimeout(function () {
-            letter.classList.remove("animation");
-          }, DURATION);
-        });
-      });
-    };
-  }, []);
-    return (
-    
-        <div className="cu-page">
-            <div className="title" id="contact">
-                <h1 className="inscription-container">Contact Us</h1>
-            </div>
-
-            <div className="centered-div">
-                <div className="content-box">
-                <h5 className="text-cu">Contact us today with any question you have and we will get in touch with you as soon as possible.</h5>
+      return (
+        <div ref={ref} className="cu-page">
+          <div
+            className="centered-div"
+            style={{
+              transform: isInView ? "none" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            <div className="content-box">
+              <h5 className="text-cu head-line">
+                Contact us today with any question you have and we will get in
+                touch with you as soon as possible.
+              </h5>
+              <div className="line">
                 <Arrow />
-                <p className="text-cu">For business inquiries and partnerships: Please email us on <a className="text-cu">test@trustpharma-eg.com</a></p>
+                <p className="text-cu">
+                  For business inquiries and partnerships: Please email us on{" "}
+                  <a className="text-cu link">test@trustpharma-eg.com</a>
+                </p>
+              </div>
+              <div className="line">
                 <Arrow />
-                <p className="text-cu">For careers: Please email us on <a className="text-cu">hr@trustpharma-eg.com</a></p>
-                </div>
+                <p className="text-cu">
+                  For careers: Please email us on{" "}
+                  <a className="text-cu link">hr@trustpharma-eg.com</a>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-  )
+      );
+    }
+    return (
+      <div>
+        <div className="title" id="contact">
+          <h1>Contact Us</h1>
+        </div>
+        <ContactCard/>
+      </div>
+    );
 }
 
 
