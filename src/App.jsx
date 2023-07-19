@@ -12,11 +12,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoading = () => {
-    // Simulating a delay for demonstration purposes
     setTimeout(() => {
-      // Set isLoading to false to indicate loading is complete
       setIsLoading(false);
-    }, 3000); // Adjust the delay time as needed
+    }, 3000); 
   };
 
   useEffect(() => {
@@ -40,9 +38,6 @@ function App() {
         </div>
       )}
     </div>
-    // <div className="site">
-    //   <Loading />
-    // </div>
   );
 }
 
