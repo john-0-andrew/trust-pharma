@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import "./Products3.css";
+import "./Products.css";
 import Drug1 from "../../assets/Integrol1.png";
 import Drug2 from "../../assets/Riscure1.png";
 import Drug3 from "../../assets/Serpass1.png";
 import Drug4 from "../../assets/Start.jpg";
 import Drug5 from "../../assets/Start.jpg";
 import Drug6 from "../../assets/Start.jpg";
-function Products3() {
+function Products() {
   const Card = ({ data }) => {
     const { imgSrc, title, subtitle , description } = data;
 
@@ -83,4 +83,4 @@ function Products3() {
   );
 }
 
-export default Products3;
+export default Products;

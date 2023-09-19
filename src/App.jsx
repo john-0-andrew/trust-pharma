@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import HomePage from "./Components/HomePage/HomePage";
-import Products3 from "./Components/Products3/Products3";
+import Products from "./Components/Products/Products";
 import Team from "./Components/Team/Team";
 import WhyTrust from "./Components/WhyTrust/WhyTrust";
 import Footer from "./Components/Footer/Footer";
@@ -30,10 +30,10 @@ function App() {
         <div className="site">
           <HomePage />
           <AboutUs />
-          <Products3 />
+          <Products />
           <Team />
           <WhyTrust />
-          <ContactUs/>
+          <ContactUs />
           <Footer />
         </div>
       )}
