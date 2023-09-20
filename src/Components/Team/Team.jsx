@@ -27,16 +27,16 @@ function Team() {
     const isInView = useInView(ref, { once: true });
     const { memberImage, name, position, description } = teamData;
     return (
-      <div className="blog">
-        <div
-          ref={ref}
-          className="card"
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
-        >
+      <div
+        className="blog"
+        ref={ref}
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+        }}
+      >
+        <div className="card">
           <div className="imgBx">
             <img src={memberImage} alt="images" />
             {/* <div className="black-tape"></div> */}
