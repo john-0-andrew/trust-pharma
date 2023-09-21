@@ -25,11 +25,10 @@ function HomePage() {
      }
   return (
     <div className=" container1" id="home">
-        <NavMenu/>
-      <Div >
-        <p>Trust Pharma LTD</p>
-        <h1>Slogan</h1>
-        <h3>SLOGAN SLOGAN SLOGAN</h3>
+      <NavMenu />
+      <Div>
+        <h1>Trust Pharma</h1>
+        <h3>Bringing trust to health & personal care</h3>
       </Div>
     </div>
   );

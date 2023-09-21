@@ -8,18 +8,34 @@ function Team() {
     {
       memberImage:
         "https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      name: "SomeOne Famous",
-      position: "Director",
+      name: "Dr. Ehab Tanas",
+      position: "General Manager",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, earum. Ipsa, optio distinctio! Repellendus aperiam ex eum magnam alias nulla recusandae animi nihil possimus, magni, iure, vitae itaque aliquid neque.",
+        "With strong previous experience in Pharma, Dr. Ehab focuses on strategic leadership and growth of the organization. Also, Dr. Ehab pays strong attention to ensuring that the Trust Pharma core values are followed in everything the organization does.",
     },
     {
       memberImage:
         "https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      name: "SomeOne Famous",
-      position: "Director",
+      name: "Dr. Ramy Karam",
+      position: " National Sales Manager",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, earum. Ipsa, optio distinctio! Repellendus aperiam ex eum magnam alias nulla recusandae animi nihil possimus, magni, iure, vitae itaque aliquid neque.",
+        "Dr. Ramy is a tenured and successful commercial and sales leader. His role within the organization as a senior sales commercial leader ensure guidance on strategic management and execution of sales plans to safeguard the organization's financial objectives.",
+    },
+    {
+      memberImage:
+        "https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      name: "Dr. Maria Nabil",
+      position: " New Products & Supply Chain Manager",
+      description:
+        "Dr. Maria has extensive experience in building new products in the area of nutraceuticals, personal care and cosmeceuticals. She leads this areas with passion towards bringing concepts to live and finding innovations that are of market fit.",
+    },
+    {
+      memberImage:
+        "https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      name: "Yara ElZayat",
+      position: " Brand Manager, Fresh Kiddo",
+      description:
+        "Yara is a passionate marketer that finds pleasure in brand building. She devotes her energy towards positioning a brand right and ensuring marketing strategies and tactics are developed to support the organization with achieving its commercial objectives.",
     },
   ];
   const TeamCard = ({ teamData, children }) => {
@@ -45,7 +61,6 @@ function Team() {
             <h2>
               {name}
               <br />
-              <span>{position}</span>
             </h2>
           </div>
         </div>

@@ -9,6 +9,9 @@ import VaccinesSharpIcon from "@mui/icons-material/VaccinesSharp";
 import { styled } from "@mui/system";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import IntegrityImg from "../../assets/Integrity.png";
+import RespectImage from "../../assets/respect.png";
+import GrowthImage from "../../assets/growth.png";
 
 function WhyTrust() {
   // useEffect(() => {
@@ -89,9 +92,12 @@ function WhyTrust() {
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
         >
-          <Bulb />
-          <h1>Innovation</h1>
-          <p className="text">New innovations in the field of pharma</p>
+          <img className="png" src={IntegrityImg} alt="" />
+          <h1>Integrity</h1>
+          <p className="text">
+            Transparent and honest relationships also build a trustworthy
+            reputation.
+          </p>
         </div>
         <div
           className="fair-comp boxes"
@@ -101,10 +107,11 @@ function WhyTrust() {
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
           }}
         >
-          <Balance />
-          <h1>Fair Competition</h1>
+          <img className="png" src={RespectImage} alt="" />
+          <h1>Respect</h1>
           <p className="text">
-            Fair competition in favor of the Egyptian patient.
+            Respect to every stakeholder either within the organization or
+            externally.
           </p>
         </div>
         <div
@@ -115,24 +122,11 @@ function WhyTrust() {
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
           }}
         >
-          <Market />
-          <h1>Enriching Market</h1>
+          <img className="png" src={GrowthImage} alt="" />
+          <h1>Sustainable Growth</h1>
           <p className="text">
-            To enrich the Egyptian market with new classes.
-          </p>
-        </div>
-        <div
-          className="support boxes"
-          style={{
-            transform: isInView ? "none" : "translateY(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
-          }}
-        >
-          <Health />
-          <h1>Support HCPs</h1>
-          <p className="text">
-            Support HCPs with innovative disease management options.
+            Focus on building sustainable and healthy growth that ensures
+            longer-term impact and performance.
           </p>
         </div>
       </div>

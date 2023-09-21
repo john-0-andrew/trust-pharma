@@ -30,9 +30,9 @@ function App() {
         <div className="site">
           <HomePage />
           <AboutUs />
+          <WhyTrust />
           <Products />
           <Team />
-          <WhyTrust />
           <ContactUs />
           <Footer />
         </div>
