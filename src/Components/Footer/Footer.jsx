@@ -3,62 +3,65 @@ import fblogo from "../../assets/fb.png";
 import linkedinlogo from "../../assets/linkedin.png";
 import emaillogo from "../../assets/e-mail.png";
 import instagramLogo from "../../assets/Instagram.png";
+import { Link} from "react-scroll";
 
 function Footer() {
   return (
     <div className="center">
       <div className="footer">
         <div className="contain">
-          <div className="col">
-            <h1>Company</h1>
+          <div className="col" id="company">
+            <h1>Company:</h1>
             <ul>
-              <li>About</li>
-              <li>Mission</li>
-              <li>Services</li>
-              <li>Social</li>
-              <li>Get in touch</li>
+              <li>
+                <Link to="home" smooth={true} duration={400}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about-us"
+                  smooth={true}
+                  duration={400}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="products"
+                  smooth={true}
+                  duration={400}
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link to="team" smooth={true} duration={400}>
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="WhyTrust"
+                  smooth={true}
+                  duration={400}
+                >
+                  Why Trust Pharma ?
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={400}
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="col">
-            <h1>Products</h1>
-            <ul>
-              <li>About</li>
-              <li>Mission</li>
-              <li>Services</li>
-              <li>Social</li>
-              <li>Get in touch</li>
-            </ul>
-          </div>
-          <div className="col">
-            <h1>Accounts</h1>
-            <ul>
-              <li>About</li>
-              <li>Mission</li>
-              <li>Services</li>
-              <li>Social</li>
-              <li>Get in touch</li>
-            </ul>
-          </div>
-          <div className="col">
-            <h1>Resources</h1>
-            <ul>
-              <li>Webmail</li>
-              <li>Redeem code</li>
-              <li>WHOIS lookup</li>
-              <li>Site map</li>
-              <li>Web templates</li>
-              <li>Email templates</li>
-            </ul>
-          </div>
-          <div className="col">
-            <h1>Support</h1>
-            <ul>
-              <li>Contact us</li>
-              <li>Web chat</li>
-              <li>Open ticket</li>
-            </ul>
-          </div>
-          <div className="col social">
+          <div className="col social" id="social">
             <h1>Fresh Kiddo</h1>
             <ul>
               <li>

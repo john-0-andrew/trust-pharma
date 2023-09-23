@@ -60,6 +60,38 @@ function NavMenu() {
                 About Us
               </Link>
             </li>
+            <ul id="sub-section">
+              <li>
+                <Link
+                  to="about-us"
+                  smooth={true}
+                  duration={400}
+                  onClick={closeNav}
+                >
+                  ‣ Vision
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about-us"
+                  smooth={true}
+                  duration={400}
+                  onClick={closeNav}
+                >
+                  ‣ Mission
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about-us"
+                  smooth={true}
+                  duration={400}
+                  onClick={closeNav}
+                >
+                  ‣ Core Values
+                </Link>
+              </li>
+            </ul>
             <li>
               <Link
                 to="products"

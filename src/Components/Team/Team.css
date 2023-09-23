@@ -198,4 +198,9 @@ hr.solid {
 .card__content span {
   color: #0000f8;
   font-weight: 600;
+  font-size: 30px;
+}
+
+.card__content {
+  font-size: 20px;
 }

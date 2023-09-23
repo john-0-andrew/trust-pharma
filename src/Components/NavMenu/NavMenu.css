@@ -29,15 +29,14 @@
   filter: drop-shadow(5px 5px 10px #ffffff80);
 }
 
-a {
+#menu a {
   text-decoration: none;
   color: #232323;
   cursor: pointer;
   transition: color 0.3s ease;
-  font-size: 10px;
 }
 
-a:hover {
+#menu a:hover {
   color: #fbb72c;
 }
 #menuToggle {
@@ -118,7 +117,6 @@ a:hover {
   padding: 50px;
   padding-top: 125px;
   right: -100px;
-
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -133,14 +131,23 @@ a:hover {
   padding: 10px 0;
   font-size: 22px;
 }
-li a {
+ #menu li a {
   font-size: 20px;
 }
 #menuToggle input:checked ~ ul {
   transform: none;
   opacity: 1;
 }
-
+ul {
+  list-style-type: none;
+}
+.sub-section {
+  
+}
+#sub-section li a {
+  font-size: 19px;
+  margin-left: 20px;
+}
 /* @media screen and (max-width: 768px) {
   #menu {
   }

@@ -14,7 +14,7 @@
   padding: 20px;
   width: 350px;
   height: 300px;
-  background: rgba(30, 40, 172,1);
+  background: rgba(30, 40, 172, 1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -24,18 +24,18 @@
 .boxes h1 {
   color: #ffffff;
 }
-@media screen and (max-width:415px) {
-    .boxes h1 {
-        font-size: 20px;
-    }
+@media screen and (max-width: 415px) {
+  .boxes h1 {
+    font-size: 20px;
+  }
 }
-@media screen and (max-width:306px) {
-    .boxes h1 {
-        font-size: 15px;
-    }
-    .boxes p {
-        font-size: 10px;
-    }
+@media screen and (max-width: 306px) {
+  .boxes h1 {
+    font-size: 15px;
+  }
+  .boxes p {
+    font-size: 10px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -65,7 +65,7 @@ section {
   text-align: center;
 }
 .char {
-    display: inline-block;
+  display: inline-block;
   animation: an 1s ease-out 1 both;
 }
 

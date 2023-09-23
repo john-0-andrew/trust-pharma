@@ -49,9 +49,33 @@
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
+#company {
+  width: 50%;
+}
+#company ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#company ul li {
+  margin-right: 20px;
+}
+.social {
+  float: right;
+}
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
+  
+}
+.social ul {
+  display: flex;
+  align-items: center;
+}
+#social {
+
+  float: right;
+  width: 400px;
 }
 
 .footer .col ul li:hover {
