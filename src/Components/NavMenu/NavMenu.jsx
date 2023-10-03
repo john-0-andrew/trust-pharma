@@ -63,7 +63,7 @@ function NavMenu() {
             <ul id="sub-section">
               <li>
                 <Link
-                  to="about-us"
+                  to="Vision"
                   smooth={true}
                   duration={400}
                   onClick={closeNav}
@@ -73,7 +73,7 @@ function NavMenu() {
               </li>
               <li>
                 <Link
-                  to="about-us"
+                  to="Mission"
                   smooth={true}
                   duration={400}
                   onClick={closeNav}
@@ -83,7 +83,7 @@ function NavMenu() {
               </li>
               <li>
                 <Link
-                  to="about-us"
+                  to="CoreValues"
                   smooth={true}
                   duration={400}
                   onClick={closeNav}

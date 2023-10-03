@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import "./WhyTrust.css";
+import "./CoreValues.css";
 // import { useEffect } from "react";
 import LightbulbSharpIcon from "@mui/icons-material/LightbulbSharp";
 import BalanceSharpIcon from "@mui/icons-material/BalanceSharp";
@@ -13,7 +13,7 @@ import IntegrityImg from "../../assets/Integrity.png";
 import RespectImage from "../../assets/respect.png";
 import GrowthImage from "../../assets/growth.png";
 
-function WhyTrust() {
+function CoreValues() {
   // useEffect(() => {
   //   let animationTimeout = null;
   //   const handleScroll = () => {
@@ -134,8 +134,8 @@ function WhyTrust() {
   }
   return (
     <div className="w-trust">
-      <div className="title" id="WhyTrust">
-        <h1>Why Trust Pharma LTD?</h1>
+      <div className="coreValues-title underline" id="CoreValues">
+        <h1>Core Values</h1>
       </div>
       <div className="section3">
         <div >
@@ -146,4 +146,4 @@ function WhyTrust() {
   );
 }
 
-export default WhyTrust;
+export default CoreValues;

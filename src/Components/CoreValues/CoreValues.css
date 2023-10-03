@@ -6,6 +6,27 @@
   background-position: 100%;
   background-size: cover;
 }
+.coreValues-title {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+padding: 20px;
+font-size: 1.2em;
+font-weight: 200;
+color: #ffffff;
+padding-bottom:5px;
+
+}
+.coreValues-title h1:first-child {
+  width: 500px;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 0.5em double  blue;
+  padding-bottom:5px;
+}
+
 .boxes {
   display: flex;
   justify-content: center;
