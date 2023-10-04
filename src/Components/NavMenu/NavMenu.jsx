@@ -63,27 +63,17 @@ function NavMenu() {
             <ul id="sub-section">
               <li>
                 <Link
-                  to="about-us"
+                  to="Vision"
                   smooth={true}
                   duration={400}
                   onClick={closeNav}
                 >
-                  ‣ Vision
+                  ‣ Mission & Vision
                 </Link>
               </li>
               <li>
                 <Link
-                  to="about-us"
-                  smooth={true}
-                  duration={400}
-                  onClick={closeNav}
-                >
-                  ‣ Mission
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="about-us"
+                  to="CoreValues"
                   smooth={true}
                   duration={400}
                   onClick={closeNav}
@@ -105,16 +95,6 @@ function NavMenu() {
             <li>
               <Link to="team" smooth={true} duration={400} onClick={closeNav}>
                 Team
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="WhyTrust"
-                smooth={true}
-                duration={400}
-                onClick={closeNav}
-              >
-                Why Trust Pharma ?
               </Link>
             </li>
             <li>
