@@ -68,17 +68,7 @@ function NavMenu() {
                   duration={400}
                   onClick={closeNav}
                 >
-                  ‣ Vision
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="Mission"
-                  smooth={true}
-                  duration={400}
-                  onClick={closeNav}
-                >
-                  ‣ Mission
+                  ‣ Mission & Vision
                 </Link>
               </li>
               <li>
@@ -105,16 +95,6 @@ function NavMenu() {
             <li>
               <Link to="team" smooth={true} duration={400} onClick={closeNav}>
                 Team
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="WhyTrust"
-                smooth={true}
-                duration={400}
-                onClick={closeNav}
-              >
-                Why Trust Pharma ?
               </Link>
             </li>
             <li>

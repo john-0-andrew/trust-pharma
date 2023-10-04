@@ -1,11 +1,11 @@
-.w-trust {
+.mv-bg {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+  background-image: linear-gradient(rgb(0, 0, 0), transparent);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
 }
-.coreValues-title {
+.mv-title {
 display: flex;
 align-items: left;
 margin: 50px;
@@ -16,12 +16,12 @@ color: #ffffff;
 padding-bottom:5px;
 
 }
-.coreValues-title h1:first-child {
-  width: 400px;
-  display: flex;
-  align-items: start;
-  border-bottom: 0.1em solid blue;
-  padding-bottom:5px;
+.mv-title h1:first-child {
+width: 400px;
+display: flex;
+align-items: left;
+border-bottom: 0.1em solid blue;
+padding-bottom:5px;
 }
 
 .boxes {
@@ -29,20 +29,30 @@ padding-bottom:5px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px;
-  margin: 50px;
+  padding: 20px;
   width: 350px;
   height: 350px;
   background: rgba(30, 40, 172, 1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease-in-out;
 }
 .boxes h1 {
   color: #ffffff;
 }
+.center:hover .boxes {
+    background-color: orange;
+    transform: translateY(150px);
+  }
+
+  .center .boxes:hover {
+    transform: translateY(200px) scale(1.5);
+  }
+  
+  
 @media screen and (max-width: 415px) {
   .boxes h1 {
     font-size: 20px;
@@ -80,6 +90,7 @@ section {
   width: 80%;
   padding: 10px;
   display: inline-block;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
