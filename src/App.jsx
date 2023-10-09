@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Loading from "./Components/Loading/Loading";
 import ContactUs from "./Components/ContactUs/ContactUs";
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleLoading = () => {
     setTimeout(() => {
