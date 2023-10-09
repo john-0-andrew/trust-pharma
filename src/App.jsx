@@ -4,8 +4,6 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import HomePage from "./Components/HomePage/HomePage";
 import Products from "./Components/Products/Products";
 import Team from "./Components/Team/Team";
-import CoreValues from "./Components/CoreValues/CoreValues";
-import MissionVision from "./Components/MissionVision/MissionVision";
 import Footer from "./Components/Footer/Footer";
 import Loading from "./Components/Loading/Loading";
 import ContactUs from "./Components/ContactUs/ContactUs";
@@ -31,8 +29,6 @@ function App() {
         <div className="site">
           <HomePage />
           <AboutUs />
-          <MissionVision /> 
-          <CoreValues />
           <Products />
           <Team />
           <ContactUs />

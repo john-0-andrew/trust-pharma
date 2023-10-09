@@ -14,7 +14,7 @@ function MissionVision() {
     const isInView = useInView(ref, { once: true });
 
     return (
-      <div ref={ref} className="center">
+      <div ref={ref} className="centers">
         <div
           className="innovation boxes"
           style={{

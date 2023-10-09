@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
-import AboutUsCrew from "../../assets/AboutUsCrew.jpg";
-import AboutUsMolecules from "../../assets/AboutUsMolecules.jpg";
+import Foundation from "../../assets/foundation.jpg";
+import Expertise from "../../assets/expertise.jpg";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import CoreValues from "../CoreValues/CoreValues";
+import MissionVision from "../MissionVision/MissionVision";
+
 
 import "./AboutUs.css";
 
@@ -30,7 +33,7 @@ function AboutUs() {
     const isInView = useInView(ref, { once: true });
 
     return (
-      <div ref={ref} >
+      <div ref={ref}>
         <h2
           style={{
             transform: isInView ? "none" : "translateY(200px)",
@@ -48,13 +51,12 @@ function AboutUs() {
     const isInView = useInView(ref, { once: true });
 
     return (
-      <div ref={ref} >
+      <div ref={ref}>
         <p
           style={{
             transform: isInView ? "none" : "translateY(200px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
-            
           }}
         >
           {children}
@@ -73,7 +75,6 @@ function AboutUs() {
             transform: isInView ? "none" : "translateY(200px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
-            
           }}
         >
           {children}
@@ -88,7 +89,7 @@ function AboutUs() {
     return (
       <div ref={ref}>
         <img
-          src={AboutUsCrew}
+          src={Foundation}
           width="808"
           height="458"
           style={{
@@ -109,7 +110,7 @@ function AboutUs() {
     return (
       <div ref={ref}>
         <img
-          src={AboutUsMolecules}
+          src={Expertise}
           width="808"
           height="458"
           style={{
@@ -135,7 +136,7 @@ function AboutUs() {
           </div>
 
           <div className="about-us-info">
-            <Title1>We Are Trust Pharma</Title1>
+            <Title1>Foundation</Title1>
 
             <Paragraph1>
               Founded in the year 2000, Trust Pharma is focused on building
@@ -152,7 +153,7 @@ function AboutUs() {
           </div>
 
           <div className="history-info">
-            <Title2>We Are Trust Pharma</Title2>
+            <Title2>Expertise</Title2>
 
             <Paragraph2>
               Within the pharmaceutical market, Trust Pharma has focused its
@@ -165,7 +166,10 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="m-v-core">
+        <MissionVision />
+        <CoreValues />
+      </div>
     </div>
   );
 }

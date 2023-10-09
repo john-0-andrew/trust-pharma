@@ -1,23 +1,20 @@
 .w-trust {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
 }
 .coreValues-title {
 display: flex;
+justify-content: center;
 align-items: left;
 margin: 50px;
 padding: 50px;
 font-size: 1.2em;
 font-weight: 200;
-color: #ffffff;
+color: #000000;
 padding-bottom:5px;
 
 }
 .coreValues-title h1:first-child {
-  width: 400px;
+  width: auto;
   display: flex;
   align-items: start;
   border-bottom: 0.1em solid blue;
@@ -30,7 +27,6 @@ padding-bottom:5px;
   align-items: center;
   flex-direction: column;
   padding: 50px;
-  margin: 50px;
   width: 350px;
   height: 350px;
   background: rgba(30, 40, 172, 1);
@@ -68,17 +64,17 @@ section {
   font-family: Calibri, sans-serif;
 }
 
-.center {
+.centers {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .boxes p {
   width: 80%;
-  padding: 10px;
+  padding: 1px;
   display: inline-block;
   color: #ffffff;
   text-align: center;
