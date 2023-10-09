@@ -41,12 +41,12 @@ padding-bottom:5px;
 .boxes h1 {
   color: #ffffff;
 }
-.center:hover .boxes {
+.centers:hover .boxes {
     background-color: orange;
     transform: translateY(150px);
   }
 
-  .center .boxes:hover {
+  .centers .boxes:hover {
     transform: translateY(200px) scale(1.5);
   }
   
