@@ -1,7 +1,6 @@
 import "./Footer.css";
 import fblogo from "../../assets/fb.png";
 import linkedinlogo from "../../assets/linkedin.png";
-import emaillogo from "../../assets/e-mail.png";
 import instagramLogo from "../../assets/Instagram.png";
 import { Link} from "react-scroll";
 
@@ -77,9 +76,6 @@ function Footer() {
                     style={{ width: "32px" }}
                   />
                 </a>
-              </li>
-              <li>
-                <img src={emaillogo} width={32} style={{ width: "32px" }} />
               </li>
               <a href="https://instagram.com/freshkiddo.eg?igshid=MzRlODBiNWFlZA==">
                 <img
